@@ -1,0 +1,51 @@
+label, p{
+    display: inline;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+    margin: 10px;
+}
+
+input{
+    display: block;
+    margin: 5px auto;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgb(225, 214, 150);
+}
+
+input[type="file"]{
+    color: black;
+}
+
+.radios{
+    margin: 0 auto;
+    width: 200px;
+    padding: 5px;
+}
+
+input[type = "radio"]{
+    margin: 0;
+    display: inline;
+    width: 20px;
+}
+
+.r_label{
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+
+.form_button{
+    display: inline-block;
+    background-color: gold;
+    font-family: "Impact";
+    color: white;
+    border: solid white 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 80%;
+    height: 25px;
+    border-radius: 20px;
+    margin: 5px 10px;
+}

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Melted Monster";
+    src: url("fonts/MeltedMonster-ARPLA.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes blood_ink{
+    from{
+        -webkit-color: red;
+        color: red;
+    }
+    to{
+        -webkit-color: teal;
+        color: teal;
+    }
+}
+
+.contactbox{
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portrait{
+    width: 400px;
+    height: 490px;
+    margin: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    margin: 20px;
+    
+}
+
+.info{
+    margin: 100px 20px;
+    font-family: "Melted Monster";
+    vertical-align: middle;
+    -webkit-animation-name: blood_ink;
+    animation-name: blood_ink;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.map{
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 0 10px black);
+}
+
+@media only screen and (max-width: 1000px) {
+    .portrait{
+        width: 300px;
+        height: 369px;
+    }
+
+    .contacts{
+        flex-direction: column;
+        width: 400px;
+        align-items: center;
+    }
+
+    .info{
+        margin: 50px 0;
+    }
+}

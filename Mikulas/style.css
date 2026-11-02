@@ -1,0 +1,402 @@
+@font-face {
+    font-family: "Christmas Dream";
+    src: url("fonts/Christmas\ Dream.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BlankNotes";
+    src: url("fonts/BlanknotesRegular-BWwV8.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes santa {
+    0%{
+        -webkit-left: -6%;
+        left: -6%;
+        -webkit-bottom: 70%;
+        bottom: 70%;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-opacity: 0;
+        opacity: 0;
+    }
+
+    20%{
+        -webkit-left: 14%;
+        left: 14%;
+        -webkit-bottom: 90%;
+        bottom: 90%;
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+        -webkit-opacity: 40%;
+        opacity: 40%;
+    }
+
+    40%{
+        -webkit-left: 35%;
+        left: 35%;
+        -webkit-bottom: 100%;
+        bottom: 100%;
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+        -webkit-opacity: 80%;
+        opacity: 80%;
+    }
+
+    60%{
+        -webkit-left: 53%;
+        left: 53%;
+        -webkit-bottom: 100%;
+        bottom: 100%;
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+        -webkit-opacity: 100%;
+        opacity: 100%;
+    }
+
+    80%{
+        -webkit-left: 70%;
+        left: 70%;
+        -webkit-bottom: 90%;
+        bottom: 90%;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+        -webkit-opacity: 100%;
+        opacity: 100%;
+    }
+
+    100%{
+        -webkit-left: 95%;
+        left: 95%;
+        -webkit-bottom: 70%;
+        bottom: 70%;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-opacity: 0%;
+        opacity: 0%;
+    }
+}
+
+@keyframes giftan1{
+    from{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    
+    to{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.2);
+    }
+    
+}
+
+@keyframes text_color{
+    0%{
+        -webkit-color: magenta;
+        color: magenta;
+    }
+
+    17%{
+        -webkit-color: blue;
+        color: blue;
+    }
+
+    33%{
+        -webkit-color: cyan;
+        color: cyan;
+    }
+
+    50%{
+        -webkit-color: green;
+        color: green;
+    }
+
+    67%{
+        -webkit-color: yellow;
+        color: yellow;
+    }
+
+    83%{
+        -webkit-color: orange;
+        color: orange;
+    }
+
+    100%{
+        -webkit-color: red;
+        color: red;
+    }
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 200px;
+    background-position: center;
+    background-image: url("images/Header.jpg");
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: cover;
+}
+
+.menu{
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fireplace{
+    width: 600px;
+}
+
+.button{
+    transform: scale(0.4);
+    padding: 0;
+    filter: drop-shadow(0 0 10px white);
+    width: 10%;
+    transition: 200ms all linear;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: 200ms all linear;
+}
+
+.button1:hover{
+    content: url("images/Sock1Full.png");
+}
+
+.button2:hover{
+    content: url("images/Sock2Full.png");
+}
+
+.button3:hover{
+    content: url("images/Sock3Full.png");
+}
+
+.button4:hover{
+    content: url("images/Sock4Full.png");
+}
+
+.button1, .button3{
+    transform: rotate(35deg);
+}
+
+.button2, .button4{
+    transform: rotate(-35deg);
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-image: url("images/Background.jpg");
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.bg_santa{
+    position: fixed;
+    width: 70px;
+    -webkit-animation: santa 5s linear 2s infinite normal none;
+    animation: santa 5s linear 2s infinite normal none;
+}
+
+.logo{
+    margin: 20px;
+    filter: drop-shadow(0 0 5px white);
+}
+
+h1{
+    color: lightgoldenrodyellow;
+    font-size: 50px;
+    text-shadow: 0 0 10px black;
+    font-family: "Christmas Dream";
+}
+
+h2{
+    font-family: "Christmas Dream";
+    margin-bottom: 0;
+    text-shadow: 0 0 2px white;
+    animation-name: text_color;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+p{
+    margin: 30px;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-image-slice: 30% 30% 30% 30% fill;
+    border-image-width: 20px;
+    border-image-repeat: round;
+    filter: drop-shadow(0 0 5px black);
+    z-index: 3;
+}
+
+.block1{
+    border-image-source: url("images/Block.png");
+}
+
+.block2{
+    border-image-source: url("images/Block2.png");
+}
+
+.main_block{
+    width: 1000px;
+    height: 600px;
+}
+
+.paper_block{
+    color: black;
+    border-image-source: url("images/Note.jpg");
+    border-image-slice: 30% 30% 30% 30% fill;
+    border-image-width: 20px;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    
+}
+
+.ribbon{
+    position: absolute;
+    z-index: 0;
+    background-image: url("images/Ribbon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: cover;
+    width: 1500px;
+    height: 100px;
+    top: 35%;
+    bottom: 50%;
+}
+
+.santa{
+    transform: scale(0.8);
+    filter: drop-shadow(0 0 5px black);
+}
+
+.greeting_texts{
+    width: 50%;
+    height: 80%;
+    margin: 50px;
+    font-family: cursive;
+    
+}
+
+.greeting{
+    text-align: center;
+    font-size: 25px;
+}
+
+.greeting_text{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.gifts{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.gift_slot{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 2px white;
+}
+
+.gift{
+    display: block;
+    padding: 0;
+    filter: drop-shadow(0 0 10px white);
+    transition: 200ms all linear;
+    animation-name: giftan1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    width: auto;
+    height: 200px;
+    text-align: center;
+    color: rgba(222, 184, 135, 0.674);
+    background-image: url("images/Footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1100px) {
+    header{
+        background-image: url("images/HeaderSmall.jpg");
+    }
+
+    .menu{
+        width: 1000px;
+    }
+
+    .fireplace{
+        width: 200px;
+    }
+
+    .logo{
+        transform: scale(0.9);
+    }
+
+    .santa{
+        width: 40%;
+        margin: 30px;
+    }
+
+    .greeting_texts{
+        width: 60%;
+        font-size: 50%;
+    }
+
+    .main_block{
+        width: 900px;
+    }
+
+    .ribbon{
+        display: none;
+    }
+}

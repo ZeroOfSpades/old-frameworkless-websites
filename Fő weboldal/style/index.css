@@ -1,0 +1,52 @@
+@keyframes logo_shadow{
+    from{
+        -webkit-transform: scale(5deg);
+        transform: rotate(5deg);
+    }
+    to{
+        -webkit-transform: scale(-5deg);
+        transform: rotate(-5deg);
+    }
+}
+
+.big_logo{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    -webkit-animation-name: logo_shadow;
+    animation-name: logo_shadow;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    filter: drop-shadow(0 0 10px teal);
+}
+
+.motto{
+    font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+.greeting{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .big_logo{
+        width: 600px;
+    }
+
+    .motto{
+        font-size: 15px;
+    }
+
+    .greeting{
+        font-size: 20px;
+    }
+}

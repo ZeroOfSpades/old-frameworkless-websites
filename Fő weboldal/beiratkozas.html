@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "hu">
+    <head>
+        <title>Máté Mester Főgonosz Képzője</title>
+        <link href = "style/main.css" rel = "stylesheet">
+        <link href = "style/beiratkozas.css" rel = "stylesheet">
+        <meta charset = "UTF-8">
+    </head>
+
+
+
+    <body>
+        <img class = "fog" src = "style/pictures/Fog.png" style = "top: 900px; left: 150px;" alt = "Köd">
+        <img class = "fog" src = "style/pictures/Fog.png" style = "top: 600px; right: 150px;" alt = "Köd">
+        <img class = "fog" src = "style/pictures/Fog.png" style = "top: 300px; left: 150px;" alt = "Köd">
+        <header>
+            <img class = "logoimg" src = "style/pictures/Logo.png" alt = "Martin Mester Főgonosz Képzője">
+            <div class = "menu">
+                <a href = "index.html">
+                    <div class = "button">
+                        <div class = "button-text">FŐOLDAL</div>
+                    </div>
+                </a>
+                <a href = "kikepzo.html">
+                    <div class = "button1">
+                        <div class = "button-text">TANFOLYAMOK</div>
+                    </div>
+                </a>
+                <a href = "berles.html">
+                    <div class = "button">
+                        <div class = "button-text">GONOSZBÉRLÉS</div>
+                    </div>
+                </a>
+                <div class = "logo">
+                    
+                </div>
+                <a href = "kapcsolat.html">
+                    <div class = "button1">
+                        <div class = "button-text">ELÉRHETŐSÉGEK</div>
+                    </div>
+                </a>
+                <a href = "siker.html">
+                    <div class = "button">
+                        <div class = "button-text">SIKERTÖRTÉNETEK</div>
+                    </div>
+                </a>
+                <a href = "gyik.html">
+                    <div class = "button1">
+                        <div class = "button-text">GYIK</div>
+                    </div>
+                </a>
+            </div>
+        </header>
+
+
+
+        <main>
+            <form class = "main_block text" style = "width: 500px;">
+                <audio autoplay controls>
+                    <source src = "style/music/WebsiteTune.wav" type = "audio/wav">
+                </audio>
+                <span class = "main_title text">
+                    Regisztráció
+                </span><br>
+
+                <label>Név</label>
+                <input type = "text" required>
+
+                <label>Születési dátum</label>
+                <input type = "date" required>
+
+                <label>Rém-mail cím</label>
+                <input type = "email" required>
+
+                <label>Kristálygömbszám</label>
+                <input type = "tel" required>
+
+                <p>Gonosziskolai képzettség</p>
+                <div class = "radios paper_block">
+                    <label class = "r_label"><input type = "radio" name = "school">Cseperesztő</label>
+                    <label class = "r_label"><input type = "radio" name = "school">Szörnyképző</label>
+                    <label class = "r_label"><input type = "radio" name = "school">Gimnázium</label>
+                    <label class = "r_label"><input type = "radio" name = "school">Nemeziskola</label>
+                    <label class = "r_label"><input type = "radio" name = "school">Árnykadémia</label>
+                </div>
+                <label>Igazoló firkálmányok</label>
+                <input type = "file" required>
+
+                <input type = "submit" class = "form_button" value = "Beküldés" formaction = "index.html">
+                <input type = "submit" class = "form_button" value = "Vissza" formaction = "index.html" formnovalidate>
+            </form>
+        </main>
+
+
+
+        <footer>
+            <span class = "footer_desc">
+                Máté Mester Főgonosz Képzője és Bérlője<sup>TM</sup>
+                Nem vállalunk felelősséget csonttörésért, izomszakadásért, bájital okozta égési sérülésekért, akármi más okozta égési sérülésekért, erdei állatoktól származó sérülésekért és fertőzésekért, halálért.
+            </span>
+        </footer>
+    </body>
+</html>

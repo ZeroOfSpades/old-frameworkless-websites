@@ -1,0 +1,51 @@
+.course_block{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin: 30px 10px;
+}
+
+.course_title{
+    font-weight: bold;
+}
+
+.course_desc{
+    width: auto;
+    margin: 50px;
+    padding: 20px;
+}
+
+.course_img{
+    width: 260px;
+    filter: drop-shadow(0 10px 10px black);
+}
+
+.course_signup{
+    display: inline-block;
+    background-color: rgb(56, 24, 24);
+    border: solid white 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: all ease-out 200ms;
+}
+
+.course_signup:hover{
+    background-color: gold;
+    transition: all ease-out 200ms;
+}
+
+.course_signup a{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .course_block{
+        height: auto;
+    }
+}

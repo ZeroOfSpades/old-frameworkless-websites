@@ -1,0 +1,34 @@
+.question_answer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+}
+
+.question{
+    display: block;
+    text-align: left;
+    width: 500px;
+    height: 180px;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.answer{
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    height: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .question_answer{
+        flex-direction: column;
+    }
+
+    .answer{
+        width: 100%;
+        text-align: left;
+    }
+}
